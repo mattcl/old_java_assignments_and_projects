@@ -1,0 +1,41 @@
+1260796750173	Rename type 'Util'
+1260797142926	Delete element
+1260804112618	Move compilation unit
+1260804131508	Move compilation unit
+1260869152800	Delete element
+1260870017425	Rename type 'DefaultEnemyManager'
+1260870027931	Rename type 'DefaultMovementManager'
+1260870040586	Rename type 'DefaultWaveManager'
+1260872660054	Copy package
+1260872709283	Rename package 'rampancy_v2.util.kdTree'
+1260872831379	Rename type 'SegmentArray'
+1260872859455	Delete element
+1260947416027	Move compilation unit
+1260947577542	Copy compilation units
+1260957219101	Rename type 'REnemyWaveSpecial'
+1260957389599	Move compilation unit
+1261028782800	Rename type 'RDefaultSegmentArray'
+1261030842874	Copy package
+1261030861852	Rename package 'rampancy_v2.util.data.movement.copy'
+1261030883968	Move compilation units
+1261030956981	Move compilation unit
+1261031170085	Move compilation units
+1261037314614	Delete element
+1261040142408	Rename method 'getWaveForBullet'
+1261082996997	Move compilation unit
+1261115471309	Rename type 'KDDistanceFunction'
+1261115484688	Move compilation unit
+1261115557997	Rename field 'DISTANCE_FUNCTION'
+1261115600878	Rename field 'DISTANCE_FROM_WALL_FUNCTION'
+1261115660267	Rename field 'VELOCITY_FUNCTION'
+1261115667475	Rename field 'LATERAL_VELOCITY_FUNCTION'
+1261115693134	Rename field 'DELTA_V_FUNCTION'
+1261115706761	Rename field 'ABSOLUTE_BEARING_FUNCTION'
+1261115715823	Rename field 'HEADNG_FUNCTION'
+1261115724674	Rename field 'DELTA_H_FUNCTION'
+1261115744722	Rename field 'TIME_SINCE_VELOCITY_CHANGE_FUNCTION'
+1261115772678	Rename field 'TIME_SINCE_DIRECTION_CHANGE_FUNCTION'
+1261115781890	Rename field 'TIME_SINCE_STOP_FUCNTION'
+1261115788279	Rename field 'ACCELERATING_OR_BREAKING_FUNCTION'
+1261115802086	Rename field 'DIRECTION_TRAVELING'
+1261132769824	Rename local variable 'currentGunHeading'

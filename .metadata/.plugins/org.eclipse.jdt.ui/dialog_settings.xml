@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
+	<item value="/Users/admin/robocode/libs" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="JVM 1.6" key="org.eclipse.jdt.ui.last.selected.project.jre"/>
+	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind"/>
+	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
+	<item value="3" key="TypeHierarchyViewPart.orientation"/>
+	<item value="666" key="clean_up_selection_dialog.preferred_height"/>
+	<item value="false" key="SortMembers.sort_all"/>
+	<item value="598" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_x"/>
+	<item value="/Users/admin/robocode/robots/RobocodeRobots" key="org.eclipse.jdt.ui.last.external.project"/>
+	<item value="0" key="org.eclipse.jdt.uiformatter_page.line_wrapping_tab_page.last_category_index"/>
+	<item value="983" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_width"/>
+	<item value="22" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_y"/>
+	<item value="filter_imports;" key="filters_last_used"/>
+	<item value="867" key="clean_up_selection_dialog.preferred_width"/>
+	<item value="4" key="clean_up_selection_dialog.last_focus"/>
+	<item value="500" key="CallHierarchyViewPart.ratio3"/>
+	<item value="500" key="CallHierarchyViewPart.ratio0"/>
+	<item value="1" key="org.eclipse.jdt.uiformatter_page.white_space.java_view.inner"/>
+	<item value="805" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_height"/>
+	<item value="0" key="CallHierarchyViewPart.call_mode"/>
+	<item value="JavaSE-1.6" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
+	<item value="407" key="clean_up_selection_dialog.preferred_x"/>
+	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="0" key="org.eclipse.jdt.uiformatter_page.white_space_tab_page.node"/>
+	<item value="22" key="clean_up_selection_dialog.preferred_y"/>
+	<item value="3" key="CallHierarchyViewPart.orientation"/>
+	<item value="2" key="CallHierarchyViewPart.field_mode"/>
+	<item value="-1" key="org.eclipse.jdt.uiformatter_page.modify_dialog_tab_page.last_focus_index"/>
+	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
+	<item value="0" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.last_focus"/>
+	<list key="SearchScopeActionGroup.working_set">
+	</list>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+		<item value="false" key="SortMembersMessageDialog.optionalDialog.id"/>
+	</section>
+	<section name="OverrideMethodDialog">
+		<item value="true" key="showtypes"/>
+	</section>
+	<section name="JarPackageWizard">
+		<item value="false" key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES"/>
+		<item value="true" key="JarManifestWizardPage.GENERATE_MANIFEST"/>
+		<item value="false" key="JarManifestWizardPage.REUSE_MANIFEST"/>
+		<item value="false" key="JarPackageWizardPage.REFACTORINGS"/>
+		<item value="true" key="jarOptionsWizardPage.EXPORT_WARNINGS"/>
+		<item value="false" key="JarManifestWizardPage.SEAL_JAR"/>
+		<item value="" key="JarManifestWizardPage.MANIFEST_LOCATION"/>
+		<item value="true" key="jarOptionsWizardPage.EXPORT_ERRORS"/>
+		<item value="false" key="JarPackageWizardPage.OVERWRITE"/>
+		<item value="true" key="JarPackageWizardPage.EXPORT_CLASS_FILES"/>
+		<item value="false" key="jarOptionsWizardPage.SAVE_DESCRIPTION"/>
+		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
+		<item value="true" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
+		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
+		<item value="true" key="JarPackageWizardPage.COMPRESS"/>
+		<item value="true" key="jarOptionsWizardPage.BUILD_IF_NEEDED"/>
+		<item value="false" key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS"/>
+		<item value="" key="jarOptionsWizardPage.DESCRIPTION_LOCATION"/>
+		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/Users/admin/Desktop/EPGYRobocode.jar"/>
+			<item value="/Users/admin/Desktop/durandal.jar"/>
+		</list>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
+	</section>
+	<section name="DialogBounds_SuperInterfaceSelectionDialog">
+		<item value="348" key="DIALOG_WIDTH"/>
+		<item value="131" key="DIALOG_Y_ORIGIN"/>
+		<item value="91" key="DIALOG_X_ORIGIN"/>
+		<item value="313" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="1" key="index"/>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item value="true" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="InstanceOf"/>
+		<item value="false" key="SynchronizedModifier"/>
+		<item value="2" key="InsertPosition"/>
+		<item value="false" key="FinalModifier"/>
+	</section>
+	<section name="ProblemSeveritiesConfigurationBlock">
+		<item value="false" key="expanded4"/>
+		<item value="false" key="expanded3"/>
+		<item value="false" key="expanded2"/>
+		<item value="false" key="expanded1"/>
+		<item value="false" key="expanded6"/>
+		<item value="false" key="expanded5"/>
+		<item value="true" key="expanded0"/>
+	</section>
+	<section name="javadoc">
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="false" key="notree"/>
+		<item value="true" key="splitindex"/>
+		<item value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/bin/javadoc" key="javadoc_command_history"/>
+		<item value="true" key="use"/>
+		<item value="false" key="nonavbar"/>
+		<item value="public" key="access"/>
+		<item value="true" key="version"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/EPGYRobocode/doc" key="destdir"/>
+		<item value="true" key="author"/>
+		<item value="" key="docletname"/>
+		<item value="1.5" key="source"/>
+		<item value="true" key="openinbrowser"/>
+		<item value="false" key="noindex"/>
+		<item value="" key="docletpath"/>
+		<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/EPGYRobocode/javadoc.xml" key="antpath"/>
+		<item value="true" key="fromStandard"/>
+		<section name="projects">
+			<section name="Assignment3">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment3/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment3/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Assignment1">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment1/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment1/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="hw2Tetris">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw2Tetris/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw2Tetris/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="hw4Threads">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw4Threads/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw4Threads/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="RobocodeRobots">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/RobocodeRobots/doc" key="destdir"/>
+				<item value="file:/Users/admin/robocode/javadoc/" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/RobocodeRobots/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="HashCracker">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/HashCracker/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/HashCracker/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Assignment7">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment7/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment7/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="HW5Yahtzee">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/HW5Yahtzee/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/HW5Yahtzee/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Assignment6">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment6/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment6/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="Assignment5">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment5/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/Assignment5/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="BunnyWorld">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/BunnyWorld/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/BunnyWorld/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="EpgyClass">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/EpgyClass/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/EpgyClass/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="hw3DBSudoku">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw3DBSudoku/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw3DBSudoku/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="LeJOS Project">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/LeJOS Project/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/LeJOS Project/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="hw1CodeCamp">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw1CodeCamp/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw1CodeCamp/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="LegoTurret">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/LegoTurret/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/LegoTurret/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="encog-examples">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/encog-examples/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/encog-examples/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="EPGYRobocode">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/EPGYRobocode/doc" key="destdir"/>
+				<item value="http://robocode.sourceforge.net/docs/robocode/;http://java.sun.com/j2se/1.5.0/docs/api/" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/EPGYRobocode/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="hw5Whiteboard">
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw5Whiteboard/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/admin/Documents/Schoolwork/2008-2009/CS108/workspace/hw5Whiteboard/javadoc.xml" key="antpath"/>
+			</section>
+		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item value="400" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+		<item value="380" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT"/>
+		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item value="true" key="group_libraries"/>
+		<item value="false" key="linkWithEditor"/>
+		<item value="1" key="layout"/>
+		<item value="1" key="rootMode"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; isWindowWorkingSet=&quot;true&quot; layout=&quot;1&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;&quot;&gt;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0A;&lt;xmlDefinedFilters&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0A;&lt;/customFilters&gt;&#x0A;&lt;/packageExplorer&gt;" key="memento"/>
+	</section>
+	<section name="JavaElementSearchActions">
+	</section>
+	<section name="AddUnimplementedConstructorsDialog">
+		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item value="false" key="RemoveFinal"/>
+		<item value="false" key="SortOrdering"/>
+	</section>
+	<section name="CallHierarchySearchScope">
+	</section>
+	<section name="SourceActionDialog.constructors">
+		<item value="true" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="SynchronizedModifier"/>
+		<item value="false" key="FinalModifier"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="410" key="height"/>
+		<item value="610" key="width"/>
+	</section>
+	<section name="JavaBuildConfigurationBlock">
+		<item value="false" key="expanded2"/>
+		<item value="false" key="expanded1"/>
+		<item value="true" key="expanded0"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
+		<item value="599" key="DIALOG_WIDTH"/>
+		<item value="94" key="DIALOG_Y_ORIGIN"/>
+		<item value="256" key="DIALOG_X_ORIGIN"/>
+		<item value="325" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet isWindowWorkingSet=&quot;false&quot; workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="70" key="DIALOG_Y_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="420" key="DIALOG_X_ORIGIN"/>
+			<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="6" key="DIALOG_Y_ORIGIN"/>
+			<item value="-35" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="ExtractMethodWizard">
+		<item value="false" key="ThrowRuntimeExceptions"/>
+		<item value="true" key="GenerateJavadoc"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="*" key="patterns"/>
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+		<item value="false" key="updateTextualMatches"/>
+		<item value="false" key="updateSimilarElements"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="611" key="DIALOG_WIDTH"/>
+		<item value="79" key="DIALOG_Y_ORIGIN"/>
+		<item value="535" key="DIALOG_X_ORIGIN"/>
+		<item value="612" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

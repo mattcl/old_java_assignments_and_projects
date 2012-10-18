@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{MidpointFindingKarel.java[MidpointFindingKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{MidpointThree.java[MidpointThree&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{GameOfLife.java[GameOfLife&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{CheckerboardKarel.java[CheckerboardKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{MazeSolvingKarel.java[MazeSolvingKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{Traingle.java[Traingle&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{MultiplicationKarel.java[MultiplicationKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{MidpointTwo.java[MidpointTwo&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{VarMazeSolvingKarel.java[VarMazeSolvingKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;{MazeSolverKarel.java[MazeSolverKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;stanford.karel{pacKarel.java[pacKarel&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;contest2010s2{CopyOfVishnuShankar.java[CopyOfVishnuShankar&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment1/&amp;lt;stanford.karel{CortlandtContest.java[CortlandtContest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment2/&amp;lt;{Pyramid.java[Pyramid&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=hw2Tetris/&amp;lt;{JBrainTetris.java[JBrainTetris&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hangman/&amp;lt;{Hangman.java[Hangman&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Assignment4/&amp;lt;{Hangman.java[Hangman&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="149" key="DIALOG_Y_ORIGIN"/>
+			<item value="398" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+</section>

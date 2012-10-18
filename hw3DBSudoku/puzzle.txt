@@ -1,0 +1,9 @@
+// Nothing from A, something from B and something from C
+// A
+likes: dennis-ritchie, dislikes: imelda-marcos, hair: gray, is: assertive, dislikes: winnie-the-pooh, dislikes: blue, is: quixotic, likes: the-michelin-woman
+
+// B
+hair: blonde, hobby: tetris-playing, is: sweet, dislikes: nice, hobby: puddle-jumping, likes: malcom-x, dislikes: sneezy, is: sensitive, likes: krusty-the-clown
+
+// C
+is: quixotic, hobby: simpsons-watching, dislikes: assertive, is: appealing, hobby: movie-going, dislikes: tax-deductible, likes: lorena-bobbit, hobby: snipe-hunting, likes: winnie-the-pooh

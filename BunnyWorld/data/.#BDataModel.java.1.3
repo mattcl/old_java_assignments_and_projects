@@ -1,0 +1,143 @@
+package data;
+import script.Script;
+import sun.audio.*;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.util.*;
+import javax.imageio.ImageIO;
+
+
+
+/**
+ * @author Matthew Chun-Lum
+ *
+ */
+public class BDataModel {
+    private Map<String,BShapeModel> shapeModels;
+    private Map<String,BPageModel> pageModels;
+	private Map<String,ResourceModel> resources;
+	private BPageCounter pageCounter;
+	private BShapeCounter shapeCounter;
+	private String documentDirectory;
+	public static Script script;
+    
+    // will need to add some array lists for resources
+    
+    /**
+     * Default constructor
+     */
+    public BDataModel() {
+        shapeModels = new HashMap<String,BShapeModel>();
+        pageModels = new HashMap<String, BPageModel>();
+        resources = new HashMap<String, ResourceModel>();
+
+        pageCounter = new BPageCounter();
+        shapeCounter = new BShapeCounter();
+        documentDirectory = null;
+        script = new Script(this);
+    }
+    
+    public void addShape(BShapeModel model){
+    	if(model.getName()==null || model.getName()=="") model.setName(shapeCounter.getShapeName());
+    	shapeModels.put(model.getName(), model);
+    }
+    
+    public void addPage(BPageModel model){
+    	if(model.getName()==null) model.setName(pageCounter.getPageName());
+    	pageModels.put(model.getName(), model);
+    }
+    
+    public void addResource(File object){
+    	ResourceModel rm = new ResourceModel();
+    	rm.setName(object.getName());
+    	rm.setFilePath(object.getAbsolutePath());
+    	String filePath = rm.getFilePath();
+    	if(filePath.endsWith(".jpeg") || filePath.endsWith(".gif")) rm.setDataType("Image");
+    	else if(filePath.endsWith(".au")) rm.setDataType("AudioStream");
+    	if(rm.getDataType().equals("Image")) rm.setImage(loadImage(object.getAbsolutePath()));
+    	else if(rm.getDataType().equals("AudioStream")) rm.setAudioStream(loadAudio(object.getAbsolutePath()));
+    	resources.put(object.getName(), rm);
+    }
+
+    public Image getImage(String resourceName){
+    	ResourceModel rm = resources.get(resourceName);
+    	if(rm == null) return null;
+    	return rm.getImage();
+    }
+    
+    public BShapeModel getShape(String shapeName){
+    	return shapeModels.get(shapeName);
+    }
+    
+    public BPageModel getPage(String pageName){
+    	return pageModels.get(pageName);
+    }
+
+    /*
+    Demonstrates reading in an Image with the ImageIO class.
+    Image is the superclass of BufferedImage.
+    Returns null on i/o error.
+   */
+   public Image loadImage(String filename) {
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(new File(filename));
+		}
+		catch (IOException ex) {
+			ex.printStackTrace();
+		}
+       
+       return image;
+   }
+   
+   public AudioStream loadAudio(String filename) {
+	   AudioStream as = null;
+	   try {
+		   InputStream in = new FileInputStream(filename);
+		   as = new AudioStream(in); 
+	   }
+	   catch (IOException ex) {
+		   ex.printStackTrace();
+	   }
+	   
+	   return as;
+  }
+   
+	/**
+	 * @param images the images to set
+	 */
+	public void setImagesMap(Map<String,ResourceModel> resources) {
+		this.resources = resources;
+	}
+	/**
+	 * @return the images
+	 */
+	public Map<String,ResourceModel> getResourcesMap() {
+		return resources;
+	}
+	 public Map<String, BShapeModel> getShapeModels() {
+		return shapeModels;
+	}
+	public void setShapeModels(Map<String, BShapeModel> shapeModels) {
+		this.shapeModels = shapeModels;
+	}
+	public Map<String, BPageModel> getPageModels() {
+		return pageModels;
+	}
+	public void setPageModels(Map<String, BPageModel> pageModels) {
+		this.pageModels = pageModels;
+	}
+	
+	public String getDocDirectory() {
+		return documentDirectory;
+	}
+	
+	public void setDocDirectory(String docdir) {
+		documentDirectory = docdir;
+	}
+
+	public boolean hasShape(String shapeName) {
+		return shapeModels.containsKey(shapeName);
+	}
+}

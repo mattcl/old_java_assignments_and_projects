@@ -1,0 +1,91 @@
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
+/**
+ * 
+ */
+
+import javax.imageio.ImageIO;
+
+/**
+ * @author Matthew Chun-Lum
+ *
+ */
+public class BDataModel {
+    private Map<String,BShapeModel> shapeModels;
+    private Map<String,BPageModel> pageModels;
+	private Map<String,Image> images;
+    
+    // will need to add some array lists for resources
+    
+    /**
+     * Default constructor
+     */
+    public BDataModel() {
+        shapeModels = new HashMap<String,BShapeModel>();
+        pageModels = new HashMap<String, BPageModel>();
+        setImagesMap(new HashMap<String, Image>());
+    }
+    public void addShape(BShapeModel model){
+    	shapeModels.put(model.getName(), model);
+    }
+    public void addPage(BPageModel model){
+    	pageModels.put(model.getName(), model);
+    }
+    public void addImage(String filename){
+    	images.put(filename, loadImage(filename));
+    }
+
+    public Image getImage(String ImageName){
+    	return images.get(ImageName);
+    }
+    public BShapeModel getShape(String shapeName){
+    	return shapeModels.get(shapeName);
+    }
+    public BPageModel getPage(String pageName){
+    	return pageModels.get(pageName);
+    }
+
+    /*
+    Demonstrates reading in an Image with the ImageIO class.
+    Image is the superclass of BufferedImage.
+    Returns null on i/o error.
+   */
+   public Image loadImage(String filename) {
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(new File(filename));
+		}
+		catch (IOException ex) {
+			ex.printStackTrace();
+		}
+       
+       return image;
+   }
+	/**
+	 * @param images the images to set
+	 */
+	public void setImagesMap(Map<String,Image> images) {
+		this.images = images;
+	}
+	/**
+	 * @return the images
+	 */
+	public Map<String,Image> getImagesMap() {
+		return images;
+	}
+	 public Map<String, BShapeModel> getShapeModels() {
+			return shapeModels;
+		}
+		public void setShapeModels(Map<String, BShapeModel> shapeModels) {
+			this.shapeModels = shapeModels;
+		}
+		public Map<String, BPageModel> getPageModels() {
+			return pageModels;
+		}
+		public void setPageModels(Map<String, BPageModel> pageModels) {
+			this.pageModels = pageModels;
+		}
+}

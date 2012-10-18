@@ -1,0 +1,131 @@
+import java.awt.*;
+import java.util.List;
+import java.util.*;
+
+/**
+ * 
+ * @author Junichi Tsutsui
+ *
+ */
+public class BPage {
+	
+	private BPageModel pageModel;
+	
+	/**
+	 * Default constructor for a page
+	 * constructs a page model to store data.
+	 */
+	public BPage() {
+		pageModel = new BPageModel();
+	}
+	
+	/**
+	 * Constructs the page model with a provided width and height
+	 * @param width
+	 * @param height
+	 */
+	public BPage(int width, int height) {
+		pageModel = new BPageModel(width, height);
+	}
+	
+	/**
+	 * Adds a provided shape to the Page 
+	 * @param shape
+	 */
+	public void addShape(BShape shape) {
+		pageModel.addShape(shape);
+	}
+	
+	/**
+	 * Removes a provided shape from the Page 
+	 * @param shape
+	 */
+	public void removeShape(BShape shape) {
+		pageModel.removeShape(shape);
+	}
+	
+	/**
+	 * Moves a provided shape to the front of the page
+	 * @param shape
+	 */
+	public void moveToFront(BShape shape) {
+		pageModel.removeShape(shape);
+		
+	}
+	
+	/**
+	 * Moves a provided shape to the back of the page
+	 * @param shape
+	 */
+	public void moveToBack(BShape shape) {
+		pageModel.removeShape(shape);
+	}
+	
+	/**
+	 * Returns the name of the page
+	 * @return
+	 */
+	public String getName() {
+		return pageModel.getName();
+	}
+	
+	/**
+	 * Sets the name of the page;
+	 * @param name
+	 */
+	public void setName(String name) {
+		pageModel.setName(name);
+	}
+	
+	/**
+	 * Returns the bounds of the page as a Rectangle
+	 * @return Rectangle
+	 */
+	public Rectangle getBounds() {
+		return pageModel.getBounds();
+	}
+	
+	/**
+	 * Sets the bounds of the page with a Rectangle
+	 * @param newBounds
+	 */
+	public void setBounds(Rectangle newBounds) {
+		pageModel.setBounds(newBounds);
+	}
+	
+	/**
+	 * Returns the shapes on the page
+	 * @return List<BShape>
+	 */
+	public List<BShape> getShapes() {
+		return pageModel.getShapes();
+	}
+	
+	/**
+	 * Returns the shape associated with the point. returns null otherwise
+	 * @param pt
+	 * @return
+	 */
+	public BShape getShape(Point pt) {
+		return pageModel.getShape(pt);
+	}
+	
+	/**
+	 * Draws a provided shape on the page
+	 * @param g
+	 * @param selected
+	 */
+	public void draw(Graphics g, BShape selected) {
+		selected.draw(g);
+	}
+	
+	/**
+	 * Draws all the shapes on the page
+	 * @param g
+	 */
+	public void draw(Graphics g) {
+	    for(BShape shape: pageModel.getShapes()) {
+	        shape.draw(g);
+	    }
+	}
+}

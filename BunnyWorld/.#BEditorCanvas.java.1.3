@@ -1,0 +1,77 @@
+import java.awt.*;
+import java.awt.event.MouseEvent;
+
+/**
+ * 
+ */
+
+/**
+ * @author Matthew Chun-Lum
+ *
+ */
+public class BEditorCanvas extends BCanvas {
+    public static final int EDITOR_WIDTH = 500;
+    public static final int EDITOR_HEIGHT = 300;
+    
+    private Point anchor;
+    
+    /**
+     * Constructor
+     */
+    public BEditorCanvas() {
+        super(EDITOR_WIDTH, EDITOR_HEIGHT);
+    }
+    
+    public void paintComponent(Graphics g) {
+        if(selected != null)
+            ; // shape draw knobs
+    }
+    
+    // -------------- Protected --------------- //
+
+    /* (non-Javadoc)
+     * @see BCanvas#handleMousePressedEvent(java.awt.event.MouseEvent)
+     */
+    @Override
+    protected void handleMousePressedEvent(MouseEvent e) {
+        Point pt = e.getPoint();
+        
+        // must update the last point
+        setLastPoint(pt);
+        
+        if(currentPage != null) {
+            
+            // clear the previous anchor
+            anchor = null;
+            
+            // First check if we have a selected shape, if so
+            // check for a knob-select
+            if(selected != null)
+                anchor = selected.getAnchorForPoint(pt);
+            
+            // if there is no knob selected, check if the point
+            // falls on a shape
+            if(anchor == null) ;
+                //selected = currentPage.getShape(pt);
+        }
+    }
+    
+    /* (non-Javadoc)
+     * @see BCanvas#handleMouseDraggedEvent(java.awt.event.MouseEvent)
+     * 
+     */
+    @Override
+    protected void handleMouseDraggedEvent(MouseEvent e) {
+        if(selected != null) {
+            if(anchor != null) {
+                // Handle resize action
+                selected.resize(anchor, e.getPoint());
+            } else {
+                // move the selected shape and update the last point
+                selected.move(getDeltaPoint(e.getPoint()));
+                setLastPoint(e.getPoint());
+            }
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+#Wed Jan 07 15:41:09 PST 2009
+org.eclipse.php.debug.coreinstalledPHPInis=/etc/php.ini
+org.eclipse.php.debug.coreinstalledPHPDebuggers=org.eclipse.php.debug.core.xdebugDebugger
+org.eclipse.php.debug.coreinstalledPHPDefaults=org.eclipse.php.debug.core.xdebugDebugger\=PHP5
+eclipse.preferences.version=1
+org.eclipse.php.debug.coreinstalledPHPLocations=/opt/local/bin/php
+org.eclipse.php.debug.corezend_debug_port=10137
+org.eclipse.php.debug.core.pathMapper=<pathMappers><item3><mapper></mapper><server>www.jta.local</server></item3><item1><mapper></mapper><server>Default PHP Web Server</server></item1><item4><mapper></mapper><server></server></item4><item2><mapper></mapper><server>blogs.jta.local</server></item2></pathMappers>
+org.eclipse.php.debug.coreinstalledPHPNames=PHP5

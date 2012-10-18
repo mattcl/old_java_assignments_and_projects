@@ -1,0 +1,12 @@
+1250393708585	Rename type 'EnemyState'
+1250393847524	Rename type 'RobotState'
+1250463776804	Delete element
+1250476715295	Delete elements
+1250477415036	Rename local variable 'stats'
+1250477544624	Rename field 'enemyStats'
+1250917649649	Rename package 'rampancy'
+1250917802794	Copy package
+1250918033941	Copy compilation unit
+1250918041128	Delete element
+1250918358236	Copy compilation unit
+1250918427722	Copy package

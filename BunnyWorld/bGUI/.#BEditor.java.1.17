@@ -1,0 +1,596 @@
+package bGUI;
+
+import data.*;
+
+import java.awt.GraphicsConfiguration;
+import java.awt.HeadlessException;
+import java.awt.Image;
+
+import javax.imageio.ImageIO;
+import javax.sound.sampled.*;
+import javax.swing.*;
+
+import sun.audio.AudioStream;
+
+import data.BDataModel;
+import data.BShape;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.beans.XMLDecoder;
+import java.beans.XMLEncoder;
+import java.io.*;
+
+import java.util.*;
+import java.util.List;
+
+/**
+ * 
+ */
+
+/**
+ * @author Matthew Chun-Lum
+ *
+ */
+public class BEditor extends JFrame {
+
+    private static BDataModel currentModel;
+    
+    /**
+     * creates a new data model
+     */
+    public static void createNewDataModel() {
+        currentModel = new BDataModel();
+    }
+    
+    /**
+     * Sets the current data model
+     * @param model
+     */
+    public static void setDataModel(BDataModel model) {
+        currentModel = model;
+    }
+    
+    /**
+     * Static method, adds a resource to the current data model
+     * @param file
+     */
+    public static void addResource(File file) {
+        currentModel.addResource(file);
+        currentModel.addResourceName(file);
+    }
+    
+    /**
+     * Static method, gets an Image from the current data model
+     * @param name
+     * @return
+     */
+    public static Image getImage(String name) {
+        return currentModel.getImage(name);
+    }
+    
+    private BShapeInspectorPanel shapeInspector;
+    private BEditorToolbar toolbar;
+    private BEditorCanvas canvas;
+    private BEditorCatalog catalog;
+    
+    private JMenuBar menuBar;
+
+    private JFileChooser fileChooser;
+    
+    private BGame game;
+    
+    //public static BPageCounter pageCounter = new BPageCounter();
+    //public static BShapeCounter shapeCounter = new BShapeCounter();
+    
+    /**
+     * Default constructor, sets up the GUI and other variables
+     */
+    public BEditor() {
+    	currentModel = new BDataModel();
+        setLayout(new BorderLayout());
+       
+        fileChooser = new JFileChooser(System.getProperty("user.dir"));
+        
+        
+        // set up the GUI
+        setUpMenuBar();
+        setUpToolbar();
+        setUpCatalogPanel();
+        setUpShapeInspectorPanel();
+        setUpCanvas();
+        
+        pack();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+               
+        addWindowListener(new WindowAdapter() {
+    		public void windowClosing(WindowEvent event) {
+    			boolean ok = doCheckQuit();
+    			if (!ok) return;
+    			System.exit(0);
+    		}
+        });
+    }
+    
+    /**
+     * 
+     */
+    public void playGame() {
+        game = new BGame("Bunny World", currentModel, this);
+        
+        this.setVisible(false);
+    }
+    
+    /**
+     * Displays and image chooser and gets the file
+     */
+    public void promptForImageFile() {
+        int retVal = fileChooser.showOpenDialog(this);
+        if(retVal == JFileChooser.APPROVE_OPTION) {
+            BEditor.addResource(fileChooser.getSelectedFile());
+            shapeInspector.addImageNameToImageChooser(fileChooser.getSelectedFile().getName());
+        }
+    }
+    
+    public void promptForSoundFile() {
+        int retVal = fileChooser.showOpenDialog(this);
+        if(retVal == JFileChooser.APPROVE_OPTION) {
+            BEditor.addResource(fileChooser.getSelectedFile());
+            
+        }
+    }
+    
+    /**
+     * Gets the image names recognized by the document
+     * @return an array of image names
+     */
+    public String[] getImageNames() {
+        // for now
+        String[] temp = {""};
+        return temp;
+    }
+    
+    public void addPage() {
+    	BPage page = new BPage();
+    	canvas.setSelected(null);
+    	canvas.setCurrentPage(page);
+    	page.setName(currentModel.getPageCounter().getPageName());
+    	currentModel.addPage(page.getModel());
+    	catalog.addNewPage(page.getModel());
+    	selected(null);
+    }
+    
+    public void removeCurrentPage() {
+        if(canvas.getCurrentPage() == null) return;
+        if(canvas.getCurrentPage().getName().equals("page1")) {
+            JOptionPane.showMessageDialog(this, "You cannot remove page1!", "Cannot Remove", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        Object[] options = {"Remove page", "Cancel"};
+        int ans = JOptionPane.showOptionDialog(this, 
+                "Are you sure you want to remove this page?\nThis action cannot be undone.",
+                "Remove Page?",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                BIconHelper.WARNING_ICON,
+                options,
+                options[1]);
+
+        if(ans == JOptionPane.YES_OPTION) {
+            canvas.setSelected(null);
+            selected(null);
+            catalog.removePage(canvas.getCurrentPageModel());
+            currentModel.removePage(canvas.getCurrentPageModel());
+            canvas.setCurrentPage(null);
+            canvas.repaint();
+        }
+    }
+    
+    /**
+     * Adds a new shape to the current page
+     */
+    public void addShape() {
+        if(canvas.getCurrentPage() != null) {
+            BShape shape = new BShape();
+            canvas.addShape(shape);
+            shape.setName(currentModel.getShapeCounter().getShapeName());
+            currentModel.addShape(shape.getModel());
+            catalog.addNewShape(shape, canvas.getCurrentPageModel());
+            selected(shape);
+        }
+    }
+    
+    /**
+     * Removes the selected shape from the canvas
+     */
+    public void removeSelectedShape() {
+        if(canvas.hasSelected()) {
+            BShape shape = canvas.getSelected();
+            canvas.removeShape(shape);
+            selected(null);
+            catalog.removeShape(shape);
+        }
+    }
+    
+    /**
+     * Moves the selected shape to the front
+     */
+    public void moveSelectedToFront() {
+        if(canvas.hasSelected()) {
+            canvas.getCurrentPage().moveToFront(canvas.getSelected());
+            canvas.repaint(canvas.getSelected().getBigBounds());
+        }
+    }
+    
+    /**
+     * Moves the selected shape to the back
+     */
+    public void moveSelectedToBack() {
+        if(canvas.hasSelected()) {
+            canvas.getCurrentPage().moveToBack(canvas.getSelected());
+            canvas.repaint(canvas.getSelected().getBigBounds());
+        }
+    }
+    
+    /**
+     * Changes the text for the canvas' selected shape
+     * @param text
+     */
+    public void changeTextForSelected(String text) {
+        if(canvas.hasSelected()) {
+            canvas.getSelected().setText(text);
+            canvas.repaint(canvas.getSelected().getBigBounds());
+        }
+    }
+    
+    /**
+     * Changes the font for the selected shape
+     * @param fontName
+     */
+    public void changeFontForSelected(String fontName) {
+        if(canvas.hasSelected()) {
+            canvas.getSelected().setFont(fontName);
+            canvas.repaint(canvas.getSelected().getBigBounds());
+        }
+    }
+    
+    /**
+     * Changes the color for the selected shape
+     * @param newColor
+     */
+    public void changeColorForSelected(Color newColor) {
+        if(canvas.hasSelected()) {
+            canvas.getSelected().setColor(newColor);
+            canvas.repaint((canvas.getSelected().getBigBounds()));
+        }
+    }
+    
+    public void changeImageForSelected(String imageName) {
+        if(canvas.hasSelected()) {
+            canvas.getSelected().setImageName(imageName);
+            canvas.repaint(canvas.getSelected().getBigBounds());
+        }
+    }
+    
+    /**
+     * Changes the bounds for the selected shape with the passed bounds
+     * @param bounds
+     */
+    public void changeBoundsForSelected(Rectangle bounds) {
+        if(canvas.hasSelected()) {
+            BShape selected = canvas.getSelected();
+            Rectangle oldBounds = selected.getBigBounds();
+            selected.setBounds(bounds);
+            canvas.repaint(oldBounds);
+            canvas.repaint(selected.getBigBounds());
+        }
+    }
+    
+    /**
+     * Changes the name for the selected object
+     * @param name
+     */
+    public void changeNameForSelected(String name) {
+        if(canvas.hasSelected()) {
+            canvas.getSelected().setName(name);
+        }
+    }
+    
+    /**
+     * Changes the current page for the canvas to the passed page
+     * @param page
+     */
+    public void changePage(BPageModel pageModel) {
+        BPage page = new BPage(pageModel);
+        page.setDrawKnobs(true);
+        canvas.setCurrentPage(page);
+        canvas.setSelected(null);
+        selected(null);
+        
+    }
+    
+    public void changeSelectedShape(BShape shape) {
+        if(canvas.getCurrentPage() != null) {
+            canvas.setSelected(shape);
+            selected(shape);
+        }
+    }
+    
+    public void changeScriptForSelected(String script) {
+        if(canvas.hasSelected()) {
+            canvas.getSelected().getModel().setScript(script);
+        }
+    }
+    
+    /**
+     * Method for telling the editor that we have selected
+     * the current shape
+     * @param shape
+     */
+    public void selected(BShape shape) {
+        shapeInspector.setInspectorForShape(shape);
+    }
+
+    // -------------- Private ------------ //
+    
+
+    
+    /**
+     * writes the resources to the directory
+     */
+    private void writeResourcesToFile() {
+        Collection<ResourceModel> resources = currentModel.getResourcesMap().values();
+        Iterator<ResourceModel> it = resources.iterator();
+        while(it.hasNext()) {
+            try {
+                ResourceModel r = it.next();
+                String newFilePath = currentModel.getDocDirectory() + File.separatorChar + r.getName();
+                File resourceFile = new File(newFilePath);
+                BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(resourceFile));
+                if(r.getDataType().equals("Image")) saveImage(r, outputStream);
+                else if(r.getDataType().equals("AudioStream")) saveAudio(r, outputStream);
+                r.setFilePath(newFilePath);
+                outputStream.close();
+            } catch (IOException e) {
+                System.out.println("uhoh");
+            } 
+        }   
+    }
+    
+    /**
+     * helps to write images out
+     * @param r
+     * @param os
+     */
+    public void saveImage(ResourceModel r, OutputStream os) {
+        BufferedImage buffImage = (BufferedImage)r.getImage();
+        try {
+            ImageIO.write(buffImage, "png", os);
+        }
+        catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
+    /**
+     * helps to write audio out
+     * @param r
+     * @param os
+     */
+    public void saveAudio(ResourceModel r, OutputStream os) {
+        try {
+            File f = new File(r.getFilePath());
+            AudioSystem.write(AudioSystem.getAudioInputStream(f), 
+                    AudioFileFormat.Type.AU, os);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } catch (UnsupportedAudioFileException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    
+    /**
+     * write the bdatamodel out to index.xml
+     */
+    private void writeDataToFile() {
+        try {
+            String newFilePath = currentModel.getDocDirectory() + File.separatorChar + "index.xml";
+            XMLEncoder e = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(newFilePath)));
+            e.writeObject(currentModel);
+            e.close();
+        } catch (IOException e) {
+            System.out.println("uhoh");
+        }
+    }
+    
+    /**
+     * opens the specified file of the user
+     */
+    private void handleOpen() {
+        doCheckQuit();
+        canvas.setDirty(false);
+        int status = fileChooser.showOpenDialog(this);
+        if (status == JFileChooser.APPROVE_OPTION) {
+            File dest = fileChooser.getSelectedFile();
+            doOpen(dest);
+        }
+    }
+    
+    /**
+     * opens the selected xml index file.
+     * @param file
+     */
+    private void doOpen(File file) {
+        try { 
+            XMLDecoder d = new XMLDecoder(new BufferedInputStream(new FileInputStream(file)));
+            BDataModel result = (BDataModel)d.readObject();
+            d.close();
+            currentModel = result;
+            currentModel.loadResources();
+            List<String> images = currentModel.getResourceNames();
+            shapeInspector.getImageChooser().removeAllItems();
+            shapeInspector.addImageNameToImageChooser("none");
+            for(int i=0; i<images.size(); i++) shapeInspector.addImageNameToImageChooser(images.get(i));
+            BPage newCurrent = new BPage();
+            newCurrent.setModel(currentModel.getPage("page1"));
+            canvas.setCurrentPage(newCurrent);
+            catalog.loadFromDataModel(currentModel);
+            selected(null);
+        } catch (IOException e) {
+            System.out.println("uhoh");
+        }
+    }
+    
+    // Asks if they want to save, and if so does it.
+    // Returns false if they cancel.
+    public boolean saveOk() {
+        int result = JOptionPane.showConfirmDialog(
+                this, "Save changes first?", "Save?",
+                JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if (result == JOptionPane.YES_OPTION) {
+            handleSave();
+        }
+        
+        return (result != JOptionPane.CANCEL_OPTION);
+    }
+    
+    // Checks if quitting is ok, and saves if needed.
+    // Returns false if they cancel.
+    public boolean doCheckQuit() {
+        if (canvas.getDirty()) {
+            boolean ok = saveOk();
+            if (!ok) return false;
+        }
+        return true;
+    }
+    
+    /**
+     * Handles the save button, checks if the directory is null, and creates a new diectory if needed
+     * saves the resources and bdatamodel
+     */
+    private void handleSave() {
+        if(currentModel.getDocDirectory()==null) {
+            handleSaveAs();
+            return;
+        }
+        writeResourcesToFile();
+        writeDataToFile();
+        canvas.setDirty(false);
+    }
+    
+    /**
+     * prompts the user to enter a file name then calls its doSaveAs
+     */
+    private void handleSaveAs() {
+        int status = fileChooser.showSaveDialog(this);
+        if (status == JFileChooser.APPROVE_OPTION) {
+            File dest = fileChooser.getSelectedFile();
+            doSaveAs(dest);
+        }
+    }
+    
+    /**
+     * makes a directory if needed and saves the resources and the bdatamodel
+     * @param file
+     */
+    private void doSaveAs(File file) {
+        file.mkdir();
+        currentModel.setDocDirectory(file.getAbsolutePath());
+        writeResourcesToFile();
+        writeDataToFile();
+        canvas.setDirty(false);
+    }
+    
+    // ------------ GUI SET UP ----------- //
+    
+    /**
+     * Sets up the top menu bar for saving/opening, etc.
+     */
+    private void setUpMenuBar() {
+        menuBar = new JMenuBar();
+        
+        JMenu fileMenu = new JMenu("File");
+        
+        JMenuItem saveItem = new JMenuItem("Save");
+        saveItem.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		handleSave();
+        	}
+        });
+        JMenuItem saveAsItem = new JMenuItem("Save As");
+        saveAsItem.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		handleSaveAs();
+        	}
+        });
+        JMenuItem openItem = new JMenuItem("Open");
+        openItem.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		handleOpen();
+        	}
+        });
+        
+        fileMenu.add(saveItem);
+        fileMenu.add(saveAsItem);
+        fileMenu.add(openItem);
+        
+        JMenu modeMenu = new JMenu("Mode");
+        
+        
+        
+        menuBar.add(fileMenu);
+        
+        setJMenuBar(menuBar);
+    }
+	
+    /**
+     * Sets up the Toolbar (NORTH). We may want this, so it's here
+     */
+    private void setUpToolbar() {
+        toolbar = new BEditorToolbar(this);
+        add(toolbar, BorderLayout.NORTH);
+    }
+    
+    /**
+     * Sets up the catalog panel (WEST)
+     * will not be implemented for the early demo
+     */
+    private void setUpCatalogPanel() {
+        catalog = new BEditorCatalog(this);
+        catalog.loadFromDataModel(currentModel);
+        add(catalog, BorderLayout.WEST);
+    }
+    
+    /**
+     * Sets up the shape inspector panel (EAST) for editing/adding shapes
+     */
+    private void setUpShapeInspectorPanel() {
+        shapeInspector = new BShapeInspectorPanel(this);
+        add(shapeInspector, BorderLayout.EAST);
+    }
+    
+    /**
+     * Sets up the canvas portion, placing it in the
+     * center of the border layout
+     */
+    private void setUpCanvas() {
+        canvas = new BEditorCanvas(this);
+        canvas.setMaximumSize(canvas.getPreferredSize());
+        canvas.setBackground(Color.gray);
+        
+        JPanel centerPanel = new JPanel();
+        centerPanel.setPreferredSize(canvas.getPreferredSize());
+        centerPanel.setLayout(new BoxLayout(centerPanel, BoxLayout.Y_AXIS));
+        centerPanel.setBackground(Color.gray);
+        centerPanel.add(Box.createVerticalGlue());
+        centerPanel.add(canvas);
+        centerPanel.add(Box.createVerticalGlue());
+        
+        add(centerPanel, BorderLayout.CENTER);
+    }
+}

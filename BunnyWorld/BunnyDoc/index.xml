@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_16" class="java.beans.XMLDecoder"> 
+ <object id="BDataModel0" class="data.BDataModel"> 
+  <void property="docDirectory"> 
+   <string>/Users/admin/Desktop/BunnyDoc</string> 
+  </void> 
+  <void property="pageCounter"> 
+   <void property="count"> 
+    <int>6</int> 
+   </void> 
+  </void> 
+  <void property="pageModels"> 
+   <void method="put"> 
+    <string>page5</string> 
+    <object class="data.BPageModel"> 
+     <void property="data"> 
+      <object idref="BDataModel0"/> 
+     </void> 
+     <void property="name"> 
+      <string>Victory</string> 
+     </void> 
+     <void property="shapes"> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>14</int> 
+          <int>59</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>carrot.gif</string> 
+        </void> 
+        <void id="BShapeModel0" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="name"> 
+          <string>shape17</string> 
+         </void> 
+        </void> 
+        <void id="Font0" property="font"/> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>166</int> 
+          <int>72</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>carrot.gif</string> 
+        </void> 
+        <void id="BShapeModel1" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="name"> 
+          <string>shape18</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>336</int> 
+          <int>5</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>carrot.gif</string> 
+        </void> 
+        <void id="BShapeModel2" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="name"> 
+          <string>shape19</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>21</int> 
+          <int>221</int> 
+          <int>458</int> 
+          <int>83</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>255</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel3" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="name"> 
+          <string>shape20</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>enter</string> 
+           <string>on enter play horray.au </string> 
+          </void> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click play horray.au </string> 
+          </void> 
+         </void> 
+         <void property="text"> 
+          <string>Yay You Win!</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="put"> 
+    <string>page2</string> 
+    <object class="data.BPageModel"> 
+     <void property="data"> 
+      <object idref="BDataModel0"/> 
+     </void> 
+     <void property="name"> 
+      <string>Mystic</string> 
+     </void> 
+     <void property="shapes"> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>12</int> 
+          <int>245</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel4" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape9</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click goto page1 </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>143</int> 
+          <int>256</int> 
+          <int>340</int> 
+          <int>88</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>rubmytummy.gif</string> 
+        </void> 
+        <void id="BShapeModel5" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape10</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>166</int> 
+          <int>48</int> 
+          <int>185</int> 
+          <int>166</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>mystic.gif</string> 
+        </void> 
+        <void id="BShapeModel6" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="name"> 
+          <string>shape11</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>enter</string> 
+           <string>on enter show shape8 </string> 
+          </void> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click hide shape12 play munch.au </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="put"> 
+    <string>page3</string> 
+    <object class="data.BPageModel"> 
+     <void property="data"> 
+      <object idref="BDataModel0"/> 
+     </void> 
+     <void property="name"> 
+      <string>FireRoom</string> 
+     </void> 
+     <void property="shapes"> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>29</int> 
+          <int>119</int> 
+          <int>439</int> 
+          <int>165</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <null/> 
+        </void> 
+        <void property="imageName"> 
+         <string>fire.gif</string> 
+        </void> 
+        <void id="BShapeModel7" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape14</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>enter</string> 
+           <string>on enter play fire.au </string> 
+          </void> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click play fire.au </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>282</int> 
+          <int>270</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>carrot.gif</string> 
+        </void> 
+        <void id="BShapeModel8" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="name"> 
+          <string>shape12</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>12</int> 
+          <int>289</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel9" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape13</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click goto Mystic </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="put"> 
+    <string>page4</string> 
+    <object class="data.BPageModel"> 
+     <void property="data"> 
+      <object idref="BDataModel0"/> 
+     </void> 
+     <void property="name"> 
+      <string>Death</string> 
+     </void> 
+     <void property="shapes"> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>104</int> 
+          <int>55</int> 
+          <int>176</int> 
+          <int>161</int> 
+         </object> 
+        </void> 
+        <void property="imageName"> 
+         <string>death.gif</string> 
+        </void> 
+        <void id="BShapeModel10" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape15</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>drop shape12</string> 
+           <string>on drop shape12 hide shape12 play munch.au show shape16 </string> 
+          </void> 
+          <void method="put"> 
+           <string>enter</string> 
+           <string>on enter play evillaugh.au </string> 
+          </void> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click play evillaugh.au </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>336</int> 
+          <int>132</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void property="hidden"> 
+         <boolean>true</boolean> 
+        </void> 
+        <void id="BShapeModel11" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape16</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click goto Victory </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="put"> 
+    <string>page1</string> 
+    <object class="data.BPageModel"> 
+     <void property="data"> 
+      <object idref="BDataModel0"/> 
+     </void> 
+     <void property="name"> 
+      <string>page1</string> 
+     </void> 
+     <void property="shapes"> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>15</int> 
+          <int>12</int> 
+          <int>460</int> 
+          <int>90</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>51</int> 
+          <int>51</int> 
+          <int>51</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel12" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape1</string> 
+         </void> 
+         <void property="text"> 
+          <string>Bunny World!</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>61</int> 
+          <int>107</int> 
+          <int>384</int> 
+          <int>49</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel13" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape2</string> 
+         </void> 
+         <void property="text"> 
+          <string>You are in a maze</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>64</int> 
+          <int>159</int> 
+          <int>274</int> 
+          <int>49</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel14" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape3</string> 
+         </void> 
+         <void property="text"> 
+          <string>of twisty little</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>63</int> 
+          <int>206</int> 
+          <int>374</int> 
+          <int>49</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel15" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape4</string> 
+         </void> 
+         <void property="text"> 
+          <string>passages, all alike</string> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>23</int> 
+          <int>283</int> 
+          <int>72</int> 
+          <int>66</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel16" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape5</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click goto Mystic </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>386</int> 
+          <int>282</int> 
+          <int>75</int> 
+          <int>73</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void id="BShapeModel17" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape7</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click goto Death </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="data.BShape"> 
+        <void property="bounds"> 
+         <object class="java.awt.Rectangle"> 
+          <int>189</int> 
+          <int>272</int> 
+          <int>100</int> 
+          <int>100</int> 
+         </object> 
+        </void> 
+        <void property="color"> 
+         <object class="java.awt.Color"> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>0</int> 
+          <int>255</int> 
+         </object> 
+        </void> 
+        <void property="hidden"> 
+         <boolean>true</boolean> 
+        </void> 
+        <void id="BShapeModel18" property="model"> 
+         <void property="data"> 
+          <object idref="BDataModel0"/> 
+         </void> 
+         <void property="movable"> 
+          <boolean>false</boolean> 
+         </void> 
+         <void property="name"> 
+          <string>shape8</string> 
+         </void> 
+         <void property="scripts"> 
+          <void method="put"> 
+           <string>click</string> 
+           <string>on click goto FireRoom </string> 
+          </void> 
+         </void> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void property="resourceNames"> 
+   <void method="add"> 
+    <string>rubmytummy.gif</string> 
+   </void> 
+   <void method="add"> 
+    <string>mystic.gif</string> 
+   </void> 
+   <void method="add"> 
+    <string>fire.gif</string> 
+   </void> 
+   <void method="add"> 
+    <string>carrot.gif</string> 
+   </void> 
+   <void method="add"> 
+    <string>death.gif</string> 
+   </void> 
+   <void method="add"> 
+    <string>fire.au</string> 
+   </void> 
+   <void method="add"> 
+    <string>evillaugh.au</string> 
+   </void> 
+   <void method="add"> 
+    <string>munch.au</string> 
+   </void> 
+   <void method="add"> 
+    <string>horray.au</string> 
+   </void> 
+  </void> 
+  <void property="saved"> 
+   <boolean>true</boolean> 
+  </void> 
+  <void property="shapeCounter"> 
+   <void property="count"> 
+    <int>21</int> 
+   </void> 
+  </void> 
+  <void property="shapeModels"> 
+   <void method="put"> 
+    <string>shape14</string> 
+    <object idref="BShapeModel7"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape8</string> 
+    <object idref="BShapeModel18"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape15</string> 
+    <object idref="BShapeModel10"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape3</string> 
+    <object idref="BShapeModel14"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape11</string> 
+    <object idref="BShapeModel6"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape2</string> 
+    <object idref="BShapeModel13"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape4</string> 
+    <object idref="BShapeModel15"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape10</string> 
+    <object idref="BShapeModel5"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape7</string> 
+    <object idref="BShapeModel17"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape16</string> 
+    <object idref="BShapeModel11"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape1</string> 
+    <object idref="BShapeModel12"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape12</string> 
+    <object idref="BShapeModel8"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape20</string> 
+    <object idref="BShapeModel3"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape19</string> 
+    <object idref="BShapeModel2"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape6</string> 
+    <object class="data.BShapeModel"> 
+     <void property="data"> 
+      <object idref="BDataModel0"/> 
+     </void> 
+     <void property="font"> 
+      <object idref="Font0"/> 
+     </void> 
+     <void property="name"> 
+      <string>shape6</string> 
+     </void> 
+     <void property="text"> 
+      <string></string> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="put"> 
+    <string>shape17</string> 
+    <object idref="BShapeModel0"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape9</string> 
+    <object idref="BShapeModel4"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape13</string> 
+    <object idref="BShapeModel9"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape18</string> 
+    <object idref="BShapeModel1"/> 
+   </void> 
+   <void method="put"> 
+    <string>shape5</string> 
+    <object idref="BShapeModel16"/> 
+   </void> 
+  </void> 
+ </object> 
+</java> 

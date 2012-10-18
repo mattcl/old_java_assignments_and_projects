@@ -1,0 +1,49 @@
+
+0 records (0 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:r
+read
+Filename:people.txt
+
+83 records (0 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:so
+select or
+Criteria record:likes: dennis-ritchie, dislikes: imelda-marcos, hair: gray, is: assertive, dislikes: winnie-the-pooh, dislikes: blue, is: quixotic, likes: the-michelin-woman
+
+83 records (34 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:ds
+delete selected
+
+49 records (0 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:so
+select or
+Criteria record:hair: blonde, hobby: tetris-playing, is: sweet, dislikes: nice, hobby: puddle-jumping, likes: malcom-x, dislikes: sneezy, is: sensitive, likes: krusty-the-clown
+
+49 records (18 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:du
+delete unselected
+
+18 records (0 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:so
+select or
+Criteria record:is: quixotic, hobby: simpsons-watching, dislikes: assertive, is: appealing, hobby: movie-going, dislikes: tax-deductible, likes: lorena-bobbit, hobby: snipe-hunting, likes: winnie-the-pooh
+
+18 records (1 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:du
+delete unselected
+
+1 records (0 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:p
+print
+*name:kaiser-sause, hair:mauve, is:mature, is:ingenious, hobby:email-reading, hobby:simpsons-watching, hobby:dancing, hobby:moping, hobby:four-square-playing, likes:jean-fetter, dislikes:pink, dislikes:molly-yard, dislikes:nubile, dislikes:nice, dislikes:sophisticated, dislikes:car-driving, dislikes:four-square-playing
+
+1 records (0 selected)
+r read, p print, sa select and, so select or, da ds du delete, c clear sel
+db:

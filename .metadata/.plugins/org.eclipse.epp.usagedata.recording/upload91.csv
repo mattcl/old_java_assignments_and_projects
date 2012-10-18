@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.jdt.junit,3.4.0.v20080603-2000,org.eclipse.jdt.junit.ResultView,1231822666876
+executed,command,org.eclipse.jdt.junit,3.4.0.v20080603-2000,org.eclipse.jdt.junit.junitShortcut.rerunLast,1231822666978
+no handler,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.edit.undo,1231822675597
+activated,editor,org.eclipse.jdt.ui,3.4.1.r341_v20080827-1100,org.eclipse.jdt.ui.CompilationUnitEditor,1231822676299
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.edit.undo,1231822676775
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.edit.undo,1231822677213
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.edit.undo,1231822677535
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.edit.undo,1231822678189
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822681839
+activated,editor,org.eclipse.jdt.ui,3.4.1.r341_v20080827-1100,org.eclipse.jdt.ui.CompilationUnitEditor,1231822701790
+activated,editor,org.eclipse.jdt.ui,3.4.1.r341_v20080827-1100,org.eclipse.jdt.ui.CompilationUnitEditor,1231822717123
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822757457
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822777124
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822824167
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822885042
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822940585
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822956315
+activated,view,org.eclipse.jdt.junit,3.4.0.v20080603-2000,org.eclipse.jdt.junit.ResultView,1231822959232
+executed,command,org.eclipse.jdt.junit,3.4.0.v20080603-2000,org.eclipse.jdt.junit.junitShortcut.rerunLast,1231822959353
+activated,editor,org.eclipse.jdt.ui,3.4.1.r341_v20080827-1100,org.eclipse.jdt.ui.CompilationUnitEditor,1231822966561
+executed,command,org.eclipse.ui,3.4.1.M20080910-0800,org.eclipse.ui.file.save,1231822968466
+activated,view,org.eclipse.jdt.junit,3.4.0.v20080603-2000,org.eclipse.jdt.junit.ResultView,1231822970648
+executed,command,org.eclipse.jdt.junit,3.4.0.v20080603-2000,org.eclipse.jdt.junit.junitShortcut.rerunLast,1231822970728
+activated,editor,org.eclipse.jdt.ui,3.4.1.r341_v20080827-1100,org.eclipse.jdt.ui.CompilationUnitEditor,1231822988941
+activated,editor,org.eclipse.jdt.ui,3.4.1.r341_v20080827-1100,org.eclipse.jdt.ui.CompilationUnitEditor,1231823019449

@@ -1,0 +1,162 @@
+/**
+ * 
+ */
+package session2;
+
+import robocode.Robot;
+import java.awt.Color;
+/**
+ * @author java
+ *
+ */
+public class Rahul3IN1 extends Robot {
+	public void run() {
+		setColors(Color.cyan,Color.orange,Color.green,Color.magenta,Color.red);
+		for(int i=0;i<12;i++){
+			everything();
+		}
+	}
+	private void kill() 
+	{
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);
+		ahead(1);
+		turnRight(2);
+		fire(3);}
+	private void everything(){
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+		kill();
+
+
+	}
+}
+
+
+

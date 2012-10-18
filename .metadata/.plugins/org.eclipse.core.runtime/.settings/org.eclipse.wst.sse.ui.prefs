@@ -1,0 +1,10 @@
+#Wed Jul 29 16:20:55 PDT 2009
+useQuickDiffPrefPage=true
+matchingBracketsColor=146,145,147
+content_assist_proposals_background=50,50,50
+content_assist_parameters_background=42,42,42
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+content_assist_proposals_foreground=184,184,184
+hoverModifiers=combinationHover|true|0;problemHover|false|0;documentationHover|false|0;annotationHover|true|Shift;
+content_assist_parameters_foreground=213,213,213

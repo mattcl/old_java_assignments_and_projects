@@ -1,0 +1,6 @@
+import robocode.Robot;
+
+
+public class Durandal extends Robot {
+
+}

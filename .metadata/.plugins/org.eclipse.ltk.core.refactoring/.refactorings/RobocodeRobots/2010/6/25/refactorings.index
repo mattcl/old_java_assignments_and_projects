@@ -1,0 +1,20 @@
+1276390076743	Copy package
+1276390212307	Delete element
+1276390220299	Delete element
+1276391138261	Rename type 'RGunStatisitc'
+1276391778416	Rename type 'RPatternMatchingGun'
+1276647576413	Copy package
+1276842022888	Rename package 'epgy'
+1276842388059	Rename package 'util'
+1276842621793	Rename package 'epgy.util'
+1276842938777	Copy package
+1276842964796	Delete element
+1276842992083	Rename type 'RBattlefield'
+1276843012707	Rename type 'RDistanceFunction'
+1276843043765	Delete elements
+1276843059440	Rename type 'RUtil'
+1276843151979	Rename type 'REnemyListener'
+1276843160318	Rename type 'REnemyRobot'
+1276843168346	Rename type 'RPoint'
+1276843183137	Rename type 'RRectangle'
+1276843201072	Rename type 'RRobotState'

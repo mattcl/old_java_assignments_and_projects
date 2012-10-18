@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="558" key="DIALOG_WIDTH"/>
+		<item value="49" key="DIALOG_Y_ORIGIN"/>
+		<item value="806" key="DIALOG_X_ORIGIN"/>
+		<item value="482" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="max" key="selection"/>
+		<list key="findhistory">
+			<item value="MAX"/>
+			<item value="RPoint"/>
+			<item value="proje"/>
+			<item value="project"/>
+			<item value="Pie"/>
+			<item value="pie"/>
+			<item value="ret"/>
+			<item value="play"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Point2D.Double"/>
+			<item value="Leela"/>
+		</list>
+	</section>
+</section>

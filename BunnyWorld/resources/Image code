@@ -1,0 +1,31 @@
+ /*
+     Demonstrates reading in an Image with the ImageIO class.
+     Image is the superclass of BufferedImage.
+     Returns null on i/o error.
+    */
+    public Image loadImage(String filename) {
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(new File(filename));
+		}
+		catch (IOException ex) {
+			ex.printStackTrace();
+		}
+        
+        return image;
+    }
+    
+    /***
+    
+     Drawing an image:
+      Draw it somewhere
+      g.drawImage(image, upper-left-x, upper-left-y, null);
+      
+      Draw it somewhere, rescaling it to fit a rectangle of the given size:
+       g.drawImage(image, upper-left-x, upper-left-y, width, height, null);
+      
+      In the Image class, see the method getScaledInstance() to compute a resized
+      image based on an existing image.
+      
+    ***/
+    

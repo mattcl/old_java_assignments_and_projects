@@ -1,0 +1,13 @@
+user: nwobilor
+user: mchunlun
+user: jtsutsui
+
+Additional Features:
+   Friendly button icons in the editor.
+   Save is enabled disabled based on dirty bit.
+   Support for making fonts bold/italic.
+   The image chooser in the shape inspector shows a preview of the image along with the filename.
+   Resources deleted in the editor are also deleted in the document's root folder.
+   Resource inspector panel allows for the viewing of images and the playing of audio clips.
+   The catalog shows image previews for image resources and shapes that display images.
+   The editor will warn you if you are deleting an image that is used by one or more shapes.

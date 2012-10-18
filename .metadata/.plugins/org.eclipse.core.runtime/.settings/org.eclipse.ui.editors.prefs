@@ -1,0 +1,20 @@
+#Fri Dec 04 18:27:34 PST 2009
+occurrenceHighlighting=false
+AbstractTextEditor.Color.Background=0,0,0
+eclipse.preferences.version=1
+spacesForTabs=true
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+AbstractTextEditor.Color.Foreground=205,205,205
+AbstractTextEditor.Color.SelectionBackground=63,63,63
+overviewRuler_migration=migrated_3.1
+hoverReplaceMode=1
+lineNumberRuler=true
+printMarginColumn=100
+deletionIndicationColor=255,0,0
+currentLineColor=27,30,33
+quickdiff.quickDiff=false
+printMarginColor=76,76,76
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.Background.SystemDefault=false
+lineNumberColor=177,177,177
+AbstractTextEditor.Color.FindScope=25,25,25

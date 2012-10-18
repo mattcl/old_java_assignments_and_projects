@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements(s) to &apos;Assignment1/stanford.karel&apos;&#x0A;- Original project: &apos;Assignment1&apos;&#x0A;- Destination element: &apos;Assignment1/stanford.karel&apos;&#x0A;- Original elements:&#x0A;     contest2010s2.CortlandtContest.java&#x0A;     contest2010s2.pacKarel.java" description="Move compilation units" destination="/&lt;stanford.karel" element1="/&lt;contest2010s2{CortlandtContest.java" element2="/&lt;contest2010s2{pacKarel.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="false" stamp="1279833258697" units="2" version="1.0"/>
+</session>

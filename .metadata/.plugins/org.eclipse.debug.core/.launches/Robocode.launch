@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/RobocodeRobots"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="robocode.Robocode"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RobocodeRobots"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx512M -Dsun.io.useCanonCaches=false -Ddebug=true"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/admin/robocode"/>
+</launchConfiguration>

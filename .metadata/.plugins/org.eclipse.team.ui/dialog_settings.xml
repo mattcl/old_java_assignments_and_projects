@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SynchronizeViewSettings">
+		<item value="1261006592217" key="lastactiveparticipant_sec_id"/>
+		<item value="org.eclipse.team.cvs.ui.workspace-participant" key="lastactiveparticipant_id"/>
+		<section name="org.eclipse.team.cvs.ui.workspace-participant.1236463428445">
+			<item value="org.eclipse.team.ui.activeModelProvider" key="org.eclipse.team.ui.activeModelProvider"/>
+		</section>
+		<section name="org.eclipse.team.cvs.ui.workspace-participant.1261006592217">
+			<item value="org.eclipse.team.ui.activeModelProvider" key="org.eclipse.team.ui.activeModelProvider"/>
+		</section>
+		<section name="org.eclipse.team.cvs.ui.workspace-participant.1235867665998">
+			<item value="org.eclipse.team.ui.activeModelProvider" key="org.eclipse.team.ui.activeModelProvider"/>
+		</section>
+	</section>
+</section>

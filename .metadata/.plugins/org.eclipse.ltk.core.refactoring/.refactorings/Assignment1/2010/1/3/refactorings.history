@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;STEPS&apos; from expression &apos;4&apos;&#x0A;- Original project: &apos;Assignment1&apos;&#x0A;- Constant name: &apos;STEPS&apos;&#x0A;- Constant expression: &apos;4&apos;&#x0A;- Declared visibility: &apos;private&apos;" description="Extract constant &apos;STEPS&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/&lt;{StoneMasonKarel.java" name="STEPS" qualify="false" replace="false" selection="672 1" stamp="1263282552910" version="1.0" visibility="2"/>
+</session>

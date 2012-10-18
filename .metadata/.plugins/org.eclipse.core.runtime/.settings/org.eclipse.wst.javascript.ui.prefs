@@ -1,0 +1,9 @@
+#Wed Jan 07 15:41:09 PST 2009
+LITERAL=\#65b042 | null | false | false | false | false
+DEFAULT=\#f5f5f5 | null | false | false | false | false
+UNFINISHED_COMMENT=\#f5f5f5 | null | true | false | false | false
+eclipse.preferences.version=1
+COMMENT=\#aeaeae | null | false | false | false | false
+KEYWORD=\#e28964 | null | false | false | false | false
+indentationSize=4
+indentationChar=space

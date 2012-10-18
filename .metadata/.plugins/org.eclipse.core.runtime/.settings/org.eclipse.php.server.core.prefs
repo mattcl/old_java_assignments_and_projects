@@ -1,0 +1,4 @@
+#Wed Jan 07 15:41:09 PST 2009
+eclipse.preferences.version=1
+defaultPHPServer=Default PHP Web Server
+phpServers=<server><base_url>http\://localhost</base_url><hostname>localhost</hostname><name>Default PHP Web Server</name><port>-1</port></server>\u0005<server><base_url>http\://blogs.jta.local</base_url><hostname>blogs.jta.local</hostname><port>-1</port><name>blogs.jta.local</name></server>\u0005<server><base_url>http\://asbury.local</base_url><hostname>asbury.local</hostname><port>-1</port><name>Asbury Park</name></server>\u0005<server><base_url>http\://www.jta.local</base_url><hostname>www.jta.local</hostname><port>-1</port><name>www.jta.local</name></server>

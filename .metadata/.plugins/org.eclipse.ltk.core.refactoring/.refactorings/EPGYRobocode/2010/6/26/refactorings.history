@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 elements(s) to &apos;EPGYRobocode/src&apos;&#x0A;- Original project: &apos;EPGYRobocode&apos;&#x0A;- Destination element: &apos;EPGYRobocode/src&apos;&#x0A;- Original element: &apos;epgy&apos;" description="Move folder" destination="/src" element1="epgy" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1277497637405" units="0" version="1.0"/>
+</session>
